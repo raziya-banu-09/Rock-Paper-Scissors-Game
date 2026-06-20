@@ -30,7 +30,6 @@ function play(userChoice) {
 
     setTimeout(() => {
 
-        // Remove shake after animation
         userHandEl.classList.remove("shake");
         computerHandEl.classList.remove("shake");
 
