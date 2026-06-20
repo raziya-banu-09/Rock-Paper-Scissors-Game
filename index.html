@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+
+        <div class="scoreboard">
+            <div>
+                <h3>You</h3>
+                <p id="user-score">0</p>
+            </div>
+
+            <div>
+                <h3>Computer</h3>
+                <p id="computer-score">0</p>
+            </div>
+        </div>
+
+        <div class="hands">
+            <div class="hand-box">
+                <h3>You</h3>
+                <div id="user-hand"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/270a.svg" width="80"></div>
+            </div>
+
+            <div class="hand-box">
+                <h3>Computer</h3>
+                <div id="computer-hand"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/270a.svg" width="80"></div>
+            </div>
+        </div>
+
+        <h2 id="result">Make your move!</h2>
+
+        <div class="buttons">
+            <button onclick="play('rock')">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/270a.svg" width="50">
+                Rock
+            </button>
+            <button onclick="play('paper')">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/270b.svg" width="50">
+                Paper
+            </button>
+            <button onclick="play('scissors')">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/270c.svg" width="50">
+                Scissors
+            </button>
+        </div>
+
+        <button class="reset" onclick="resetGame()">Reset Game</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
